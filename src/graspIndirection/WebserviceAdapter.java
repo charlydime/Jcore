@@ -1,12 +1,22 @@
 package graspIndirection;
 
-public class WebserviceAdapter {
+public class WebserviceAdapter implements Webservice{
 	
-	Venta venta ;
+	Titulo titulo ;
+	public WebserviceAdapter() {
+		titulo = new Titulo();
+	}
 	
-	void envia() {
+	public void envia() {
 		
-		System.out.println(venta.toString());
+		System.out.println(titulo.toString());
+		System.out.println("enviado!!");
 	}
 
+	public void cancela() {
+		
+		System.out.println(titulo.toString());
+		System.out.println("cancelacion enviada!!");
+	}
+	
 }
