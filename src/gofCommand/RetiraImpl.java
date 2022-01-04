@@ -14,7 +14,7 @@ public class RetiraImpl implements IOperacion{
 	@Override
 	public void ejecuta() {
 		
-		this.cuenta.depositar(this.monto);
+		this.cuenta.retira(this.monto);
 		
 		
 	}
